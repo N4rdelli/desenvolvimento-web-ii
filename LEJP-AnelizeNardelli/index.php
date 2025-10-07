@@ -17,9 +17,9 @@ require_once "./views/navbar_template.php"
         include './views/card_template.php';
         ?>
         <?php
-        $card_href = BASE_URL . 'exercicios/exercicio_01.php';
+        $card_href = BASE_URL . 'exercicios/exercicio_02.php';
         $card_title = 'Exercício 2';
-        $card_content = 'Lê 2 números e exibe some, subtração, multiplicação e divisão.';
+        $card_content = 'Lê 2 números e exibe soma, subtração, multiplicação e divisão.';
         include './views/card_template.php';
         ?>
         <?php
