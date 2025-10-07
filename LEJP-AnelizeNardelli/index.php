@@ -23,9 +23,9 @@ require_once "./views/navbar_template.php"
         include './views/card_template.php';
         ?>
         <?php
-        $card_href = BASE_URL . 'exercicios/exercicio_01.php';
+        $card_href = BASE_URL . 'exercicios/exercicio_03.php';
         $card_title = 'Exercício 3';
-        $card_content = 'Lê a base e a altura de um retângulo, calcula e exibe o sua área e perímetro.';
+        $card_content = 'Lê a base e a altura de um retângulo, calcula e exibe o sua área e seu perímetro.';
         include './views/card_template.php';
         ?>
         <?php
