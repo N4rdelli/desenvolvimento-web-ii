@@ -6,12 +6,12 @@ $card_title = $card_title ?? 'Exercício 00';
 $card_content = $card_content ?? 'Enunciado do exercício 00, Lorem ipsum dolor sit amet consectetur adipisicing elit.'
 ?>
 
-<div>
-    <a href="<?php echo htmlspecialchars($card_href) ?>">
-        <h3>
+<div class="p-4 border border-gray-200 rounded bg-white shadow-md hover:scale-105 transition-all ease-out duration-150">
+    <a href="<?php echo htmlspecialchars($card_href) ?>" class="flex flex-col gap-y-2">
+        <h2 class="text-2xl font-normal text-gray-700">
             <?php echo htmlspecialchars($card_title) ?>
-        </h3>
-        <p>
+        </h2>
+        <p class="text-gray-500 font-light">
             <?php echo htmlspecialchars($card_content)?>
         </p>
     </a>
