@@ -40,6 +40,8 @@ $active_classes = 'py-4 px-4 m-0 text-gray-900 border-b-2 border-indigo-700 tran
             background-size: cover;
             background-repeat: no-repeat;
         }
+        /* Classe utilizada na resolução dos exercícios */
+        .erro { color: red; font-weight: bold; }
     </style>
 </head>
 
