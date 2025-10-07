@@ -11,7 +11,7 @@ $card_content = $card_content ?? 'Enunciado do exercício 00, Lorem ipsum dolor 
         <h2 class="text-2xl font-normal text-gray-700">
             <?php echo htmlspecialchars($card_title) ?>
         </h2>
-        <p class="text-gray-500 font-light">
+        <p class="text-gray-500 font-light text-sm">
             <?php echo htmlspecialchars($card_content)?>
         </p>
     </a>

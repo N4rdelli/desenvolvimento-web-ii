@@ -47,7 +47,7 @@ $active_classes = 'py-4 px-4 m-0 text-gray-900 border-b-2 border-indigo-700 tran
     <nav class="inline-flex justify-center md:justify-start md:px-32 w-screen bg-white shadow-md text-base shadow-sm">
         <ul class="inline-flex items-center gap-8">
             <li>
-                <a href="./index.php"
+                <a href="<?php echo BASE_URL; ?>index.php"
                     class="<?= $base_link_class . ' ' . ($current_page === 'index.php' ? $active_classes : $inactive_classes); ?>">Início</a>
             </li>
             <li>
@@ -66,7 +66,7 @@ $active_classes = 'py-4 px-4 m-0 text-gray-900 border-b-2 border-indigo-700 tran
                     <el-menu anchor="bottom end" popover
                         class="w-56 origin-top-right rounded-md bg-white shadow-lg outline-1 outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
                         <div class="py-1">
-                            <a href="#"
+                            <a href="<?php echo BASE_URL; ?>/exercicios/exercicio_01.php"
                                 class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-600 focus:outline-hidden">Exercício
                                 1</a>
                             <a href="#"
