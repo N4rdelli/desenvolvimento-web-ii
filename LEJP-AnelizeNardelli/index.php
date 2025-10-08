@@ -41,33 +41,33 @@ require_once "./views/navbar_template.php"
         include './views/card_template.php';
         ?>
         <?php
-        $card_href = BASE_URL . 'exercicios/exercicio_01.php';
+        $card_href = BASE_URL . 'exercicios/exercicio_06.php';
         $card_title = 'Exercício 6';
-        $card_content = 'Lê informações com um formulário e as exibe na tela.';
+        $card_content = 'Lê cinco números e exibe uma média entre eles.';
         include './views/card_template.php';
         ?>
         <?php
-        $card_href = BASE_URL . 'exercicios/exercicio_01.php';
+        $card_href = BASE_URL . 'exercicios/exercicio_07.php';
         $card_title = 'Exercício 7';
-        $card_content = 'Lê informações com um formulário e as exibe na tela.';
+        $card_content = 'Lê duas notas de três alunos diferentes e exibe a média de cada um.';
         include './views/card_template.php';
         ?>
         <?php
-        $card_href = BASE_URL . 'exercicios/exercicio_01.php';
+        $card_href = BASE_URL . 'exercicios/exercicio_08.php';
         $card_title = 'Exercício 8';
-        $card_content = 'Lê informações com um formulário e as exibe na tela.';
+        $card_content = 'Lê um número n e exibe seu fatorial a partir de uma função.';
         include './views/card_template.php';
         ?>
         <?php
-        $card_href = BASE_URL . 'exercicios/exercicio_01.php';
+        $card_href = BASE_URL . 'exercicios/exercicio_09.php';
         $card_title = 'Exercício 9';
-        $card_content = 'Lê informações com um formulário e as exibe na tela.';
+        $card_content = 'Lê um número decimal e exibe seu resultado arredondado utilizando as funções nativas.';
         include './views/card_template.php';
         ?>
         <?php
-        $card_href = BASE_URL . 'exercicios/exercicio_01.php';
+        $card_href = BASE_URL . 'exercicios/exercicio_10.php';
         $card_title = 'Exercício 10';
-        $card_content = 'Lê informações com um formulário e as exibe na tela.';
+        $card_content = 'Lê uma sequência indefinida de números até o usuário digitar zero e exibe quantos deles são pares.';
         include './views/card_template.php';
         ?>
     </div>

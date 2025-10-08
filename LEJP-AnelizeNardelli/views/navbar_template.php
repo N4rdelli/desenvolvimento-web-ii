@@ -103,7 +103,7 @@ $active_classes = 'py-4 px-4 m-0 text-gray-900 border-b-2 border-indigo-700 tran
                 </el-dropdown>
             </li>
             <li>
-                <a href="./sobre.php"
+                <a href="<?php echo BASE_URL; ?>/views/sobre.php"
                     class="<?= $base_link_class . ' ' . ($current_page === 'sobre.php' ? $active_classes : $inactive_classes); ?>">Sobre
                     a atividade</a>
             </li>
