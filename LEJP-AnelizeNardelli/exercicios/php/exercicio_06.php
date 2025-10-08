@@ -24,7 +24,7 @@ $link_voltar = 'javascript:history.back()';
     </div>
 
     <div class="flex flex-col sm:flex-row space-x-8 space-y-8">
-        <div class="w-full rounded border border-gray-300 px-4 py-2 space-y-2">
+        <div class="w-full rounded border border-gray-300 p-4 space-y-2 bg-white">
             <h2 class="text-2xl text-gray-900">Resolução em JavaScript</h2>
             <div>
                 <form id="mediaFormJS" class="space-y-4">
@@ -67,7 +67,7 @@ $link_voltar = 'javascript:history.back()';
             </div>
         </div>
 
-        <div class="w-full rounded border border-gray-300 px-4 py-2 space-y-2">
+        <div class="w-full rounded border border-gray-300 p-4 space-y-2 bg-white">
             <h2 class="text-2xl text-gray-900">Resolução em PHP</h2>
             <div>
                 <form method="POST" action="" id="mediaFormPHP" class="space-y-4">
