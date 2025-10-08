@@ -95,7 +95,7 @@ $active_classes = 'py-4 px-4 m-0 text-gray-900 border-b-2 border-indigo-700 tran
                             <a href="<?php echo BASE_URL; ?>/exercicios/exercicio_09.php"
                                 class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-600 focus:outline-hidden">Exercício
                                 9</a>
-                            <a href="#"
+                            <a href="<?php echo BASE_URL; ?>/exercicios/exercicio_10.php"
                                 class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-600 focus:outline-hidden">Exercício
                                 10</a>
                         </div>
