@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const resultadoDiv = document.getElementById('resultadoJS');
 
     form.addEventListener('submit', function(event) {
-        event.preventDefault();
+        event.preventDefault(); // Impedimos o envio padrão
 
         resultadoDiv.innerHTML = '';
         
-        // Capturamos todos os inputs que fazem parte do vetor de números
+        // Capturamos todos os inputs que fazem parte do vetor de números usando a classe
         const inputElements = document.querySelectorAll('#mediaFormJS .numero-js');
         const numeros = [];
         let erros = [];
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 erros.push(`O valor para o Número ${index + 1} não é válido.`);
             } else {
                 numeros.push(valor);
-                soma += valor;
+                soma += valor; // Já acumulamos a soma
             }
         });
 

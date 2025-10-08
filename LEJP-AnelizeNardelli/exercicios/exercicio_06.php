@@ -1,4 +1,5 @@
 <?php
+// Capturamos as configurações e o template de navegação
 require_once "../config.php";
 require_once "../views/navbar_template.php";
 
@@ -16,7 +17,7 @@ $link_voltar = 'javascript:history.back()';
     </div>
 
     <div class="flex flex-col space-y-2 mb-8">
-        <h1 class="text-4xl text-gray-900">Exercício 6</h1>
+        <h1 class="text-4xl text-gray-900">Exercício 6 (Refatorado)</h1>
         <p class="text-gray-700 text-base font-light">
             <span class="font-medium">Enunciado:</span> Utilize um <b><i>vetor</i></b> que leia <b><i>5 números</i></b> e, em sequência, exiba a <b><i>média</i></b> entre eles.
         </p>
@@ -27,13 +28,31 @@ $link_voltar = 'javascript:history.back()';
             <h2 class="text-2xl text-gray-900">Resolução em JavaScript</h2>
             <div>
                 <form id="mediaFormJS" class="space-y-4">
-                    <?php for ($i = 1; $i <= 5; $i++): ?>
-                        <div>
-                            <label for="num<?php echo $i; ?>JS" class="block text-sm font-medium text-gray-700">Número <?php echo $i; ?>:</label>
-                            <input placeholder="Número <?php echo $i; ?>" type="number" step="any" id="num<?php echo $i; ?>JS" required
-                                class="mt-1 block w-full border border-gray-300 rounded-md p-2 numero-js">
-                        </div>
-                    <?php endfor; ?>
+                    <div>
+                        <label for="num1JS" class="block text-sm font-medium text-gray-700">Número 1:</label>
+                        <input placeholder="Número 1" type="number" step="any" name="numeroJS[]" required
+                            class="mt-1 block w-full border border-gray-300 rounded-md p-2 numero-js">
+                    </div>
+                    <div>
+                        <label for="num2JS" class="block text-sm font-medium text-gray-700">Número 2:</label>
+                        <input placeholder="Número 2" type="number" step="any" name="numeroJS[]" required
+                            class="mt-1 block w-full border border-gray-300 rounded-md p-2 numero-js">
+                    </div>
+                    <div>
+                        <label for="num3JS" class="block text-sm font-medium text-gray-700">Número 3:</label>
+                        <input placeholder="Número 3" type="number" step="any" name="numeroJS[]" required
+                            class="mt-1 block w-full border border-gray-300 rounded-md p-2 numero-js">
+                    </div>
+                    <div>
+                        <label for="num4JS" class="block text-sm font-medium text-gray-700">Número 4:</label>
+                        <input placeholder="Número 4" type="number" step="any" name="numeroJS[]" required
+                            class="mt-1 block w-full border border-gray-300 rounded-md p-2 numero-js">
+                    </div>
+                    <div>
+                        <label for="num5JS" class="block text-sm font-medium text-gray-700">Número 5:</label>
+                        <input placeholder="Número 5" type="number" step="any" name="numeroJS[]" required
+                            class="mt-1 block w-full border border-gray-300 rounded-md p-2 numero-js">
+                    </div>
 
                     <button type="submit"
                         class="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-normal font-medium text-white bg-indigo-700 hover:bg-indigo-900">
@@ -90,6 +109,7 @@ $link_voltar = 'javascript:history.back()';
                         } else {
                             foreach ($_POST['numerosPHP'] as $index => $valor) {
                                 $num = filter_var(trim($valor), FILTER_VALIDATE_FLOAT);
+
                                 if ($num === false || $num === null) {
                                     $erros[] = "O valor para o Número " . ($index + 1) . " não é válido.";
                                 } else {
@@ -105,13 +125,12 @@ $link_voltar = 'javascript:history.back()';
 
                         } else {
                             // Se não houver erros, procedemos ao cálculo da média.
+                            
                             $soma = array_sum($numeros_validos);
                             $media = $soma / count($numeros_validos);
-
-                            // Formatamos o resultado para exibição
                             $media_formatada = number_format($media, 2, ',', '.');
                             
-                            // E exibimos os resultados
+                            // Exibição formatada
                             echo "<p>Números lidos: <strong>" . implode(', ', $numeros_validos) . "</strong></p>";
                             echo "<p>A Média dos 5 números é: <strong>{$media_formatada}</strong></p>";
                         }
