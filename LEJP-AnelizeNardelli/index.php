@@ -13,7 +13,7 @@ require_once "./views/navbar_template.php"
         <?php
         $card_href = BASE_URL . 'exercicios/exercicio_01.php';
         $card_title = 'Exercício 1';
-        $card_content = 'Lê informações com um formulário e as exibe na tela.';
+        $card_content = 'Lê informações de um usuário e as exibe na tela.';
         include './views/card_template.php';
         ?>
         <?php
@@ -29,15 +29,15 @@ require_once "./views/navbar_template.php"
         include './views/card_template.php';
         ?>
         <?php
-        $card_href = BASE_URL . 'exercicios/exercicio_01.php';
+        $card_href = BASE_URL . 'exercicios/exercicio_04.php';
         $card_title = 'Exercício 4';
-        $card_content = 'Lê informações com um formulário e as exibe na tela.';
+        $card_content = 'Lê uma nota e uma porcentagem de presença e determina a situação de um aluno.';
         include './views/card_template.php';
         ?>
         <?php
-        $card_href = BASE_URL . 'exercicios/exercicio_01.php';
+        $card_href = BASE_URL . 'exercicios/exercicio_05.php';
         $card_title = 'Exercício 5';
-        $card_content = 'Lê informações com um formulário e as exibe na tela.';
+        $card_content = 'Lê um número n e exibe a soma de 1 até n.';
         include './views/card_template.php';
         ?>
         <?php
