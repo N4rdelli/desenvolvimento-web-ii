@@ -1,6 +1,6 @@
 <?php
-require_once "../config.php";
-require_once "../views/navbar_template.php";
+require_once "../../config.php";
+require_once "../../views/navbar_template.php";
 
 $fallback_link = $fallback_url ?? BASE_URL . 'index.php';
 $link_voltar = 'javascript:history.back()';

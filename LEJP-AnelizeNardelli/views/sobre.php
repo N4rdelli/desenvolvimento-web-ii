@@ -1,5 +1,5 @@
 <?php
-require_once "../config.php";
+require_once "../../config.php";
 require_once "./navbar_template.php"
     ?>
 <div class="px-8 md:px-32 py-8 flex flex-col">
